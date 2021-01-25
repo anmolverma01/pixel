@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+			padding:0px;
+			margin:0px;
+		}
+		.dim{
+			width:100%;
+			background-color: #ff0044;
+			color:#fff;
+			padding: 0px;
+			margin:0px;
+			text-align: center;
+			font-size: 30px;
+			font-weight: 600;
+			font-family: ubuntu;
+		}
+	</style>
+</head>
+
+<body>
+    <div class="dim" id="pix">My Screen in pixel.</div>
+    <script type="text/javascript">
+    setInterval(function() {
+        var pixi = document.getElementById('pix').offsetWidth;
+        document.getElementById('pix').innerHTML = pixi + 'px';
+    }, 10)
+    </script>
+</body>
+
+</html>
